@@ -21,4 +21,9 @@
         'node_pkg': 'nodejs',
         'npm_pkg': 'nodejs' if pillar_get('node:install_from_ppa') else 'npm',
     },
+    'Redhat': {
+        'node_pkg': 'nodejs',
+        'npm_pkg': 'nodejs' if pillar_get('node:install_from_ppa') else 'npm',
+    },
+
 }, grain='os', merge=pillar_get('node:lookup')) %}

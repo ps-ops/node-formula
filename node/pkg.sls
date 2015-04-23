@@ -22,8 +22,6 @@ npm:
 {%- else %}
   pkg.installed:
     - name: {{ node.npm_pkg }}
-    - require:
-      - pkg: nodejs
 {%- endif %}
 {%- endif %}
 nodejs:
